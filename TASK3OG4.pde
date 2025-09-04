@@ -16,33 +16,36 @@ void setup() {
   println("number divided: "+numberDivided);
   println("besked til bruger: "+beskedTilBruger);
 
-  address= "nyvej";
-  numberSum= 1; 
-  numberDivided= 2.5;
-  beskedTilBruger= "pølsemix1";
+  address= address + "nyvej";
+  numberSum= numberSum + 1; 
+  numberDivided= numberDivided + 2.5;
+  beskedTilBruger=  beskedTilBruger + "pølsemix1";
   
   println("address: "+address);
   println("number sum: "+numberSum);
   println("number divided: "+numberDivided);
   println("besked til bruger: "+beskedTilBruger);
 
-  int numberSumPlusOne = numberSum+1; 
-  float numberDividedPlusOne = numberDivided+1;
+  numberSum += 1;
+  numberDivided += 1;
   
-  println(numberSumPlusOne);
-  println(numberDividedPlusOne);
+  println(numberSum);
+  println(numberDivided);
   
- int numberSum3= numberSum+3;
- float numberDivided3 = numberDivided+3;
+ numberSum += 3;
+ numberDivided += 3;
   
-  println(numberSum3);
-  println(numberDivided3);
+  println(numberSum);
+  println(numberDivided);
   
-  int numberSumMinusOne = numberSum-1;
-  float numberDividedMinusOne = numberDivided-1;
+  numberSum-= 1;
+  numberDivided -= 1;
   
-  println(numberSumMinusOne);
-  println(numberDividedMinusOne);
+  println(numberSum);
+  println(numberDivided);
   
 
 }
+
+
+
