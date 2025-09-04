@@ -6,8 +6,8 @@ int circleSize;
 int numberOfCircles;
 int x;
 int y;
-int counter;
-int rowCounter; 
+int counter=0;
+int rowCounter=0; 
 int red;
 int green;
 int blue;
@@ -26,8 +26,8 @@ void setup(){
 }
 void draw(){
   
-  counter = 0;
-  rowCounter = 0;
+  //counter = 0;
+  //rowCounter = 0;
  
   x = circleSize*counter;
   y = circleSize*rowCounter;
@@ -54,8 +54,13 @@ void draw(){
  
   //Add the code for 6.c here
   
-  red = counter==0 ? (int)random(255):red;
+ 
+    red = counter==0 ? (int)random(255) : red;
+  green = counter==0 ? (int)random(255) : green;
+  blue = counter==0 ? (int)random(255) : blue;
+  fill(red,green,blue);
+  
+  }
   
   
   
-}
